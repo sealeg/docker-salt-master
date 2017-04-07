@@ -1,0 +1,7 @@
+[saltstack]
+name = Saltstack RHEL7/CentOS7 repo
+baseurl = https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest
+enabled = 1
+gpgcheck = 1
+gpgkey = https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/SALTSTACK-GPG-KEY.pub
+

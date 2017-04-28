@@ -14,6 +14,6 @@ COPY master /etc/salt/master
 COPY entrypoint.sh /
 RUN  chmod u+x /entrypoint.sh
 
-VOLUME ["/etc/salt/master.d", "/srv/salt", "/etc/salt/pki", "/var/cache/salt"]
+VOLUME ["/etc/salt/pki", "/var/cache/salt"]
 
 ENTRYPOINT ["/entrypoint.sh"]

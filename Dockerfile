@@ -4,7 +4,7 @@ MAINTAINER sealeg <https://github.com/sealeg>
 COPY saltstack.repo /etc/yum.repos.d/saltstack.repo
 
 RUN yum -y update \
- && yum -y install epel-release \
+ && yum -y install epel-release git python-pygit2 \
  && yum -y install salt-master figlet \
  && yum -y autoremove \
  && yum -y clean all
